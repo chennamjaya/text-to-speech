@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text-to-Speech Converter</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Text-to-Speech Converter</h1>
+    <form action="/synthesize" method="post">
+        <textarea name="text" rows="10" cols="30"></textarea><br>
+        <button type="submit">Convert to Speech</button>
+    </form>
+</body>
+</html>
